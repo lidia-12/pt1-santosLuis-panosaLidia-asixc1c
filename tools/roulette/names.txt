@@ -1,36 +1,37 @@
-daniel.gonzalez.7E6@itb.cat
-ian.burruecoalbero.7e6@itb.cat
-yohancel.pita.7e4@itb.cat
-pablo.cabrera.7e6@itb.cat
-franz.camacho.7e6@itb.cat
-antonio.caralps.7e6@itb.cat
-quim.clar.7e6@itb.cat
-deepak.dadra.7e6@itb.cat
-sara.diaz.7e6@itb.cat
-yohancel.pita.7e4@itb.cat
-marc.espin.7e6@itb.cat
-luis.espinal.7e3@itb.cat
-josep.figueroa.7e4@itb.cat
-amin.frankou.7e6@itb.cat
-cinthya.garcia.7e6@itb.cat
-yohancel.pita.7e4@itb.cat
-adrian.garcia.7e6@itb.cat
-efrem.gomez.7e4@itb.cat
-josue.loor.7e4@itb.cat
-victor.martinez.7e6@itb.cat
-yohancel.pita.7e4@itb.cat
-marc.martinez.7e6@itb.cat
-joan.morrus.7e6@itb.cat
+Victor Martinez
+Cinthya Garcia
+Carlos Quintos
+Yohancel Pita
+Lidia Panosa
+Ian Burruecoalbero
+Sara Diaz
+??????????
+Yohancel Pita
+Franz Camacho
+Yohancel Pita
+Pol Pomeda
+Quim Clar
+Pablo Cabrera
+Rowan Vowler
+Josep Figueroa
+Luis Espinal
+Marc Espin
+Yohancel Pita
+Antonio Caralps
+Josue Loor
+Yohancel Pita
+Luis Santos
+Marc Martinez
+Yohancel Pita
+Pol Santiago
+Daniel Gonzalez
+Adrian Garcia
+Yohancel Pita
+Deepak Dadra
+Ivan Porras
+Joan Morrus
+Ignacio Sallent
+Efrem Gomez
+Yoel Solis
+Amin Frankou
 The professor chooses
-lidia.panosa.7e6@itb.cat
-yohancel.pita.7e4@itb.cat
-yohancel.pita.7e4@itb.cat
-yohancel.pita.7e4@itb.cat
-pol.pomeda.7e6@itb.cat
-ivan.porras.7e6@itb.cat
-carlos.quintos.7e3@itb.cat
-ignacio.sallent.7e6@itb.cat
-pol.santiago.7e6@itb.cat
-luis.santos.7e6@itb.cat
-yoel.solis.7e6@itb.cat
-rowan.vowler.7e4@itb.cat
