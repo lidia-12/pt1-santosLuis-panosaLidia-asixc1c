@@ -24,6 +24,9 @@ const colores = [
     '#EAECEE',
     '#F2D7D5'];
 const jsConfetti = new JSConfetti()
+const audioRun = document.getElementById("runRuoulette");
+const audioWinner = document.getElementById("winner");
+
 
 
 fetch('names.txt')
@@ -50,10 +53,11 @@ function rotarNombres() {
 
 let intervalId = null;
 function empezarRotacion() {
+    audioRun.play();
     detenerRotacion();
     nombres.sort(() => Math.random() - 0.5);
     intervalId = setInterval(rotarNombres,100);
-    setTimeout(detenerWinner, 10000);
+    setTimeout(detenerWinner, 8000);
 }
 
 function detenerRotacion() {
@@ -62,6 +66,7 @@ function detenerRotacion() {
 }
 function detenerWinner() {
     clearInterval(intervalId);
+    audioWinner.play()
     intervalId = null;
     jsConfetti.addConfetti({
         emojis: ['🍉', '👺', '💩', '🧠', '🙇‍♀️', '❤️‍🩹', '🐕‍🦺', '🪱', '🦚', '🥟', '🍦', '🏄', '🎿', '⚽', '🚡', '🚤', '🔍', '🖥', '🏳️‍🌈', '🏳️‍🌈', '🏳️‍🌈', '🏳️‍🌈', '🔝', '💾', '💿', '📷', '💻', '📲', '😛', '😝', '🐼', '🐻‍❄️'],
