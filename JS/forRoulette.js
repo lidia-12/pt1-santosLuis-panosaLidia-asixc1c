@@ -1,4 +1,4 @@
-let container = document.getElementById('coutainer_main')
+let container = document.getElementById('container_list')
 let nombres = [];
 let lista = document.createElement('ul');
 let indice = 0;
@@ -50,13 +50,9 @@ function rotarNombres() {
 
 let intervalId = null;
 function empezarRotacion() {
-    // Si ya hay una rotación en progreso, detenerla antes de comenzar otra
     detenerRotacion();
-
     nombres.sort(() => Math.random() - 0.5);
-
     intervalId = setInterval(rotarNombres,100);
-    // Detener la rotación después de 10 segundos
     setTimeout(detenerWinner, 10000);
 }
 
@@ -74,9 +70,4 @@ function detenerWinner() {
         emojiSize: 50,
     })
 }
-
-
-
 document.getElementById("rotar").addEventListener("click", empezarRotacion);
-
-let elementos = document.querySelectorAll('ul li');
