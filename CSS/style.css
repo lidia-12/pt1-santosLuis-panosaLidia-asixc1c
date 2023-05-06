@@ -32,6 +32,7 @@ body{
     padding: 2%;
     width: 50%;
     height: 20%;
+    display: flex;
 }
 
 a {
@@ -72,6 +73,8 @@ li:nth-child(3) {
 li:nth-child(4) {
     /* Estilos para el elemento del medio */
     transform: scale(1.4);
+    border-color: red;
+    border-width: 3px;
 }
 li:nth-child(5) {
     /* Estilos para el elemento del medio */

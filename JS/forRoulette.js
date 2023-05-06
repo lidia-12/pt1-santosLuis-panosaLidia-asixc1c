@@ -23,6 +23,7 @@ const colores = [
     '#E8DAEF',
     '#EAECEE',
     '#F2D7D5'];
+const jsConfetti = new JSConfetti()
 
 
 fetch('names.txt')
@@ -54,34 +55,24 @@ function empezarRotacion() {
 
     nombres.sort(() => Math.random() - 0.5);
 
-    let velocidadInicial = 100; // velocidad inicial del intervalo en milisegundos
-    let velocidad = velocidadInicial;
-    let tiempoTranscurrido = 0; // tiempo transcurrido en milisegundos
-
-    // Iniciar la rotación cada 200 ms
-    intervalId = setInterval(() => {
-        rotarNombres();
-        tiempoTranscurrido += velocidad;
-        velocidad = velocidadInicial + (tiempoTranscurrido / 100);
-    }, velocidadInicial);
-
+    intervalId = setInterval(rotarNombres,100);
     // Detener la rotación después de 10 segundos
     setTimeout(detenerWinner, 10000);
 }
 
 function detenerRotacion() {
-    const cuartoElemento = document.querySelector("li:nth-child(4)");
-    cuartoElemento.style.background = '#f8f8f8'
     clearInterval(intervalId);
     intervalId = null;
 }
 function detenerWinner() {
-    const cuartoElemento = document.querySelector("li:nth-child(4)");
-    let indiceAleatorio = Math.floor(Math.random() * colores.length);
-    let colorForElement = colores[indiceAleatorio];
-    cuartoElemento.style.background = colorForElement
     clearInterval(intervalId);
     intervalId = null;
+    jsConfetti.addConfetti({
+        emojis: ['🍉', '👺', '💩', '🧠', '🙇‍♀️', '❤️‍🩹', '🐕‍🦺', '🪱', '🦚', '🥟', '🍦', '🏄', '🎿', '⚽', '🚡', '🚤', '🔍', '🖥', '🏳️‍🌈', '🏳️‍🌈', '🏳️‍🌈', '🏳️‍🌈', '🔝', '💾', '💿', '📷', '💻', '📲', '😛', '😝', '🐼', '🐻‍❄️'],
+        confettiRadius: 10,
+        confettiNumber: 120,
+        emojiSize: 50,
+    })
 }
 
 
