@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
 body{
     background-color: white;
 }
@@ -52,7 +53,7 @@ li:nth-child(-n+7) {
     display: flex;
 }
 li:nth-child(1) {
-/* Estilos para el elemento del medio */
+    /* Estilos para el elemento del medio */
     transform: scale(0.8);
 }
 li:nth-child(2) {
@@ -84,16 +85,80 @@ li:nth-child(7) {
     transform: scale(0.8);
 }
 
-#rotar {
-  font-size: 100%;
-  padding-inline: 30%;
-  padding-bottom: 10%;
-  padding-top: 10%;
-}
-#container_list{
-}
-.container_botom{
-  margin: auto;
-  width: 200px;
-}
+.menu{
+    width: 20%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
 
+}
+.menu a{
+    width: 30%;
+    text-align: center;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color:#ffffff;
+    margin-inline: 2%;
+    padding-inline: 4%;
+    padding-top: 1px;
+    background-color:#f2595e;
+    border-color: #F69DA1;
+    border-width: 3px;
+    border-radius: 5px;
+
+}
+%test {
+     position: absolute;
+     content: '';
+     transition: all .5s;
+ }
+
+ #rotar{
+     height: fit-content;
+     bottom;
+ }
+.container_botom {
+    color: white;
+    font-family: 'Rubik One', sans-serif;
+    text-decoration: none;
+    font-size: 4vw;
+    transition: all .5s;
+    background-color: #3498db;
+
+ &::before {
+     @extend %test;
+     bottom: -15px;
+     width: 100%;
+     left: 8px;
+     transform: skewX(45deg);
+     background-color: darken(#3498db, 20%);
+ }
+
+&::after {
+     @extend %test;
+     right: -15px;
+     width: 15px;
+     bottom: -8px;
+     transform: skewY(45deg);
+     background-color: darken(#3498db, 30%);
+ }
+
+&:active {
+     margin-left: 10px;
+     margin-top: 10px;
+&::before {
+     bottom: -5px;
+     height: 5px;
+     left: 3px;
+ }
+
+&::after {
+     right: -5px;
+     width: 5px;
+     bottom: -3px;
+ }
+}
+}
