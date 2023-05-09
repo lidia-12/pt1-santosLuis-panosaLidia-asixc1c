@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <title>Temporizador de cuenta regresiva</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
 </head>
 <body>
-
+  <h1>Temporizador de cuenta regresiva</h1>
+  <label>Fecha y hora de inicio:</label>
+  <input type="datetime-local" id="datetime-input">
+  <br><br>
+  <label>Música:</label>
+  <select id="music-dropdown">
+    <option value="music1.mp3">Música 1</option>
+    <option value="music2.mp3">Música 2</option>
+  </select>
+  <br><br>
+  <div id="countdown"></div>
+  <div id="current-time"></div>
+  <br>
+  <button id="pause-button" onclick="pauseCountdown()">PAUSE</button>
+  <button id="play-button" onclick="startCountdown()">PLAY</button>
+  <button id="restart-button" onclick="restartCountdown()">RESTART</button>
 </body>
+  <script src="../../JS/timer/forTimer-countdown2.js"></script>
 </html>

@@ -6,12 +6,26 @@ const startButton = document.getElementById('play');
 const pauseButton = document.getElementById('pause');
 const restartButton = document.getElementById('restart');
 const countdownDiv = document.getElementById('countdown');
-const currentDateTimeDiv = document.getElementById('currentDateTime');
+const currentTime = document.getElementById("current-time");
 const audioPlayer = document.getElementById('audioPlayer');
 
 let countdownInterval; // variable global para el intervalo del temporizador
 let countdownTime = 0; // variable global para el tiempo restante del temporizador en segundos
 let isPaused = false; // variable global para indicar si el temporizador está pausado
+
+// Función para mostrar la fecha y hora actual
+function updateCurrentTime() {
+  const now = new Date();
+  currentTime.innerHTML = "Fecha y hora actuales: " + now.toLocaleString();
+}
+
+// Función para mostrar la fecha y hora actual
+function updateCurrentTime() {
+  const now = new Date();
+  currentTime.innerHTML = "Fecha y hora actuales: " + now.toLocaleString();}
+
+// Actualizar la fecha y hora actual cada segundo
+setInterval(updateCurrentTime, 1000);
 
 // Función para iniciar el temporizador
 function startCountdown() {
