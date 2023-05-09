@@ -27,8 +27,6 @@ const jsConfetti = new JSConfetti()
 const audioRun = document.getElementById("runRuoulette");
 const audioWinner = document.getElementById("winner");
 
-
-
 fetch('names.txt')
     .then(response => response.text())
     .then(data => {
