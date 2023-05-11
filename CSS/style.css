@@ -303,3 +303,39 @@ button:hover {
     width: 80%;
   }
 }
+
+.menu_nav{text-align: center;
+    padding: 1%;
+    transition: all 300ms;
+    margin-bottom: 1%;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 0.05mm;
+    border-bottom-width: 0.05mm;
+    border-color: #6C5E46}
+
+.menu_opc:hover{color: dodgerblue;}
+
+.menu_opc{text-decoration: none;
+    color: black;
+    font-weight:bold;
+    font-size: 100%;
+    padding: 0%;
+    margin: 2%;
+    border-radius: 7px;}
+
+.seccion_herramientas{width: 75%;}
+
+.contenedor_herramientas{display: flex;
+    margin: 0.5%}
+
+.imagen_herramientas{width: 20%;
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 1%;}
+
+.titulo_herramientas{text-decoration: none;
+    font-weight: bold;
+    color: black;}
+
+.titulo_herramientas:hover{ color: dodgerblue; }
