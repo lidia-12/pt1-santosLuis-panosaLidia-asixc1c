@@ -6,23 +6,24 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-<header>
+<header class="header">
     <nav class="menu_nav">
         <a class="menu_opc" href="./index.html">MAIN PAGE</a>
         <a class="menu_opc" href="./tools/roulette/rulette-html.html">ROULETTE</a>
-        <a class="menu_opc" href="./tools/timer/timer-main.html">TIMER</a>
-    </nav>
-    <label id="switch">
+        <a class="menu_opc_last" href="./tools/timer/timer-main.html">TIMER</a>
+        <label id="switch" class="menu_button">
         <input type="checkbox">
         <span class="slider round"></span>
-    </label>
+        </label>
+    </nav>
+
 </header>
 <div class="seccion_herramientas">
     <div class="contenedor_herramientas">
         <a href="tools/roulette/rulette-html.html">
             <div class="item item1">
-                <div class="imagen_herramientas">
-                    <img src="images/main/ruolette.png" alt="">
+                <div>
+                    <img class="imagen_herramientas" src="images/main/ruolette.png" alt="">
                     <h2 class="titulo_herramientas">Ruleta</h2>
                 </div>
             </div>
@@ -31,8 +32,8 @@
     <div class="contenedor_herramientas">
         <a href="tools/timer/timer-main.html">
             <div class="item item2">
-                <div class="imagen_herramientas">
-                    <img src="images/main/crono.png" alt="">
+                <div>
+                    <img class="imagen_herramientas" src="images/main/crono.png" alt="">
                     <h2 class="titulo_herramientas">Cronometro</h2>
                 </div>
             </div>
