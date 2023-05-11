@@ -24,8 +24,10 @@ const colores = [
     '#EAECEE',
     '#F2D7D5'];
 const jsConfetti = new JSConfetti()
-const audioRun = document.getElementById("runRuoulette");
+const audioRun = document.getElementById("runRuolette");
 const audioWinner = document.getElementById("winner");
+
+
 
 fetch('names.txt')
     .then(response => response.text())
