@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Countdown</title>
-    <link rel="stylesheet" href="../../CSS/style.css">
+  <link rel="stylesheet" href="../../CSS/style.css">
 </head>
 <body>
 <header>
-    <nav class="menu_nav">
-        <a class="menu_opc" href="../../index.html">MAIN PAGE</a>
-        <a class="menu_opc" href="../../tools/roulette/rulette-html.html">ROULETTE</a>
-        <a class="menu_opc" href="../../tools/timer/timer-main.html">TIMER</a>
-    </nav>
+  <nav class="menu_nav">
+    <a class="menu_opc" href="../../index.html">MAIN PAGE</a>
+    <a class="menu_opc" href="../../tools/roulette/rulette-html.html">ROULETTE</a>
+    <a class="menu_opc" href="../../tools/timer/timer-main.html">TIMER</a>
+  </nav>
+  <label id="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+  </label>
 </header>
-  <h1 class="title">COUNTDOWN TIMER :)</h1>
-  <div class="fecha_incio">
+<h1 class="title">COUNTDOWN TIMER :)</h1>
+<div class="fecha_incio">
   <label>Fecha y hora de inicio:</label>
   <input class="datetime-input" type="datetime-local" id="datetime-input">
   <br><br>
-  </div>
-  <label>Musica:</label>
-  <select id="music-dropdown">
-    <option value="music1.mp3" src="../../tools/timer/music1.mp3">Musica 1</option>
-    <option value="music2.mp3">Musica 2</option>
-  </select>
-  <br><br>
-  <div class="countdonw" id="countdown"></div>
-  <div class="currenttime" id="current-time"></div>
-  <br>
-  <button class="timer-buttons" id="pause-button" onclick="pauseCountdown()">PAUSE</button>
-  <button class="timer-buttons" id="play-button" onclick="startCountdown()">PLAY</button>
-  <button class="timer-buttons" id="restart-button" onclick="restartCountdown()">RESTART</button>
+</div>
+<label>Musica:</label>
+<select id="music-dropdown">
+  <option value="music1.mp3" src="../../tools/timer/music1.mp3">Musica 1</option>
+  <option value="music2.mp3">Musica 2</option>
+</select>
+<br><br>
+<div class="countdonw" id="countdown"></div>
+<div class="currenttime" id="current-time"></div>
+<br>
+<button class="timer-buttons" id="pause-button" onclick="pauseCountdown()">PAUSE</button>
+<button class="timer-buttons" id="play-button" onclick="startCountdown()">PLAY</button>
+<button class="timer-buttons" id="restart-button" onclick="restartCountdown()">RESTART</button>
 </body>
-  <script src="../../JS/timer/forTimer-countdown2.js"></script>
+<script src="../../JS/darkMode.js"></script>
+<script src="../../JS/timer/forTimer-countdown2.js"></script>
 </html>

@@ -41,7 +41,7 @@ fetch('names.txt')
     })
     .catch(error => console.error(error));
 
-function rotarNombres() {
+function spindNames() {
     indice = (indice + nombres.length - 1) % nombres.length;
     nombres.forEach((nombre, i) => {
         let elemento = lista.children[i];
@@ -50,19 +50,19 @@ function rotarNombres() {
 }
 
 let intervalId = null;
-function empezarRotacion() {
+function startSpin() {
     audioRun.play();
-    detenerRotacion();
+    restartRullet();
     nombres.sort(() => Math.random() - 0.5);
-    intervalId = setInterval(rotarNombres,100);
-    setTimeout(detenerWinner, 8000);
+    intervalId = setInterval(spindNames,100);
+    setTimeout(stopWinner, 8000);
 }
 
-function detenerRotacion() {
+function restartRullet() {
     clearInterval(intervalId);
     intervalId = null;
 }
-function detenerWinner() {
+function stopWinner() {
     clearInterval(intervalId);
     audioWinner.play()
     intervalId = null;
@@ -73,4 +73,4 @@ function detenerWinner() {
         emojiSize: 50,
     })
 }
-document.getElementById("rotar").addEventListener("click", empezarRotacion);
+document.getElementById("rotar").addEventListener("click", startSpin);

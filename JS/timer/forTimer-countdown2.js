@@ -21,6 +21,7 @@ function updateCurrentTime() {
 // Función para iniciar la cuenta regresiva
 function startCountdown() {
   endTime = new Date(datetimeInput.value).getTime();
+  //const music = new Audio(musicDropdown.value);
   const music = new Audio(musicDropdown.value);
   countdownInterval = setInterval(() => {
     const now = new Date().getTime();
@@ -28,9 +29,12 @@ function startCountdown() {
     if (distance <= 0) {
       clearInterval(countdownInterval);
       music.play();
-      countdown.innerHTML = "¡Tiempo agotado!";
+      countdown.innerHTML = '¡Tiempo agotado!'
       pauseButton.disabled = true;
       playButton.disabled = true;
+      setTimeout(() => {
+        music.pause();
+      }, 10000);
     } else {
       let days = Math.floor(distance / (1000 * 60 * 60 * 24));
       let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -44,6 +48,7 @@ function startCountdown() {
   paused = false;
 }
 
+
 // Función para pausar la cuenta regresiva
 function pauseCountdown() {
   clearInterval(countdownInterval);
@@ -54,12 +59,11 @@ function pauseCountdown() {
 
 // Función para reiniciar la cuenta regresiva
 function restartCountdown() {
-clearInterval(countdownInterval);
-countdown.innerHTML = "";
-currentTime.innerHTML = "";
-pauseButton.disabled = true;
-playButton.disabled = false;
-paused = false;
+  countdown.innerHTML = '';
+  clearInterval(countdownInterval);
+  pauseButton.disabled = true;
+  playButton.disabled = false;
+  paused = false;
 }
 
 // Actualizar la fecha y hora actual cada segundo

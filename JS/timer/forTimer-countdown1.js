@@ -23,7 +23,7 @@ function updateCurrentTime() {
 }
 
 // Función para iniciar la cuenta regresiva
-function startCountdown() {
+function startCountdown(){
   endTime = new Date(datetimeInput.value).getTime();
   const music = new Audio(musicDropdown.value);
   countdownInterval = setInterval(() => {
@@ -31,7 +31,7 @@ function startCountdown() {
     const distance = endTime - now;
     if (distance <= 0) {
       clearInterval(countdownInterval);
-      music.play();
+      music.play()
       countdown.innerHTML = "¡Tiempo agotado!";
       pauseButton.disabled = true;
       playButton.disabled = true;
@@ -78,3 +78,6 @@ setInterval(updateCurrentTime, 1000);
 pauseButton.disabled = true;
 restartButton.disabled = true;
 
+document.getElementById("play-button").addEventListener("click", startCountdown);
+document.getElementById("pause-button").addEventListener("click", pauseCountdown);
+document.getElementById("restart-button").addEventListener("click", restartCountdown);
