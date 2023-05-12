@@ -40,7 +40,7 @@ function startCountdown() {
       let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      countdown.innerHTML = `Tiempo restante: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      countdown.innerHTML =`${days}d:${hours}h:${minutes}m:${seconds}s`;
     }
   }, 1000);
   pauseButton.disabled = false;
