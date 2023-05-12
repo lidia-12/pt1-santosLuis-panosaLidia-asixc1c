@@ -5,10 +5,18 @@ const startButton = document.getElementById("start");
 const resetButton = document.getElementById("reset");
 const countdownDisplay = document.getElementById("countdown");
 const musicDropdown = document.getElementById("music-dropdown");
-
+const currentTime = document.getElementById("current-time");
 
 let timeLeft;
 let timerId;
+
+// Función para mostrar la fecha y hora actual
+function updateCurrentTime() {
+  const now = new Date();
+  currentTime.innerHTML = "Fecha y hora actuales: " + now.toLocaleString();
+}
+// Actualizar la fecha y hora actual cada segundo
+setInterval(updateCurrentTime, 1000);
 
 const updateCountdownDisplay = () => {
   const hours = Math.floor(timeLeft / 3600).toString().padStart(2, "0");
