@@ -440,3 +440,11 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+.input_cronometro{
+    align-content: center;
+    align-items: center;
+}
+
+.input{
+}
