@@ -1,7 +1,7 @@
 // Seleccionar elementos del DOM
-const horasInput = document.getElementById('hours');
-const minutosInput = document.getElementById('minutes');
-const segundosInput = document.getElementById('seconds');
+let horasInput = document.getElementById('hours');
+let minutosInput = document.getElementById('minutes');
+let segundosInput = document.getElementById('seconds');
 
 // Obtener los elementos del DOM
 const musicDropdown = document.getElementById("music-dropdown");
@@ -24,12 +24,16 @@ function updateCurrentTime() {
 
 // Función para iniciar la cuenta regresiva
 function startCountdown(){
-  endTime = new Date(datetimeInput.value).getTime();
+  endTime = new Date();
+  endTime.setHours(Number(horasInput));
+  endTime.setMinutes(Number(minutosInput));
+  endTime.setSeconds(Number(segundosInput));
+  console.log(endTime)
   const music = new Audio(musicDropdown.value);
   countdownInterval = setInterval(() => {
     const now = new Date().getTime();
     const distance = endTime - now;
-    if (distance <= 0) {
+    if ( distance <= 0) {
       clearInterval(countdownInterval);
       music.play()
       countdown.innerHTML = "¡Tiempo agotado!";
@@ -39,7 +43,7 @@ function startCountdown(){
       let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      countdown.innerHTML = `Tiempo restante:  ${hours} ${minutes} ${seconds}`;
+      countdown.innerHTML = `${hours} : ${minutes} : ${seconds} `;
     }
   }, 1000);
   pauseButton.disabled = false;
