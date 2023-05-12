@@ -18,25 +18,22 @@
     </nav>
 </header>
   <h1 class="title">COUNTDOWN TIMER :)</h1>
-  <div class="fecha_incio">
-    <p>Selecciona la cantidad de horas, minutos y segundos:</p>
-    <input type="number" id="hours" placeholder="Horas">
-    <input type="number" id="minutes" placeholder="Minutos">
-    <input type="number" id="seconds" placeholder="Segundos">
-  <br><br>
-  </div>
+<div>
+    <label for="hours">Horas:</label>
+    <input type="number" id="hours" min="0" max="23" value="0">
+    <label for="minutes">Minutos:</label>
+    <input type="number" id="minutes" min="0" max="59" value="0">
+    <label for="seconds">Segundos:</label>
+    <input type="number" id="seconds" min="0" max="59" value="0">
+    <button id="start">Iniciar cuenta regresiva</button>
+    <button id="reset">Reiniciar cuenta regresiva</button>
+    <p id="countdown">00:00:00</p>
+</div>
   <label>Musica:</label>
   <select id="music-dropdown">
-    <option id="" value="music1.mp3">Musica 1</option>
+    <option id="music1" value="music1.mp3">Musica 1</option>
     <option value="music2.mp3">Musica 2</option>
   </select>
-  <br><br>
-  <div class="countdonw" id="countdown"></div>
-  <div class="currenttime" id="current-time"></div>
-  <br>
-  <button class="timer-buttons" id="pause-button">PAUSE</button>
-  <button class="timer-buttons" id="play-button">PLAY</button>
-  <button class="timer-buttons" id="restart-button">RESTART</button>
 </body>
   <script src="../../JS/darkMode.js"></script>
   <script src="../../JS/timer/forTimer-countdown1.js"></script>
