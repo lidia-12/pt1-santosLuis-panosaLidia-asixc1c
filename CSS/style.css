@@ -197,11 +197,23 @@ li:nth-child(7) {
   font-size: 1.5em;
 }
 
-#stop-button,
-#restart-button,
-#edit-button,
-#start-button,
-#music-upload-button {
+#stop-button{
+  margin: 1em;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+}
+#restart-button
+#edit-button{
+  margin: 1em;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+}
+#start-button{
+  margin: 1em;
+  font-size: 1.5em;
+  padding: 0.5em 1em;
+}
+#music-upload-button{
   margin: 1em;
   font-size: 1.5em;
   padding: 0.5em 1em;
