@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Share+Tech+Mono&display=swap');
+
 :root {
     --color-fuente: #000;
     --color-fondo: #fff;
@@ -182,6 +184,7 @@ li:nth-child(7) {
 #countdown-container {
   text-align: center;
   font-size: 4em;
+    font-family: "Share Tech Mono", sans-serif;
 }
 
 #countdown {
@@ -190,6 +193,7 @@ li:nth-child(7) {
   border-radius: 0.5em;
   display: inline-block;
   width: 4.5em;
+    font-family: "Share Tech Mono", sans-serif;
 }
 
 #current-date {
@@ -262,6 +266,7 @@ h1 {
   margin: 50px auto;
   font-size: 80px;
   color: #333;
+    font-family: "Share Tech Mono", sans-serif;
 }
 
 #current-date {
@@ -460,3 +465,9 @@ input:checked + .slider:before {
 .input{
 }
 
+
+
+
+.Countdonw_Div{
+    font-family: "Share Tech Mono", sans-serif;
+}
